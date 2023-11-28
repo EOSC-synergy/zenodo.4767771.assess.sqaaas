@@ -1,0 +1,10 @@
+services:
+  qc.fair_thirsty-peach-bullfrog:
+    command: sleep 6000000
+    image: eoscsynergy/sqaaas-fair_eva:1.7.12-rc2
+    volumes:
+    - source: ./
+      target: /sqaaas-build
+      type: bind
+    working_dir: /sqaaas-build
+version: '3.7'
